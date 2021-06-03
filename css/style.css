@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.primary-color {
+    color: #c45605;
+}
+
+/* Navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    transition: 0.5s;
+}
+
+.navbar ul li{
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: #c45605 2px solid;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.hero-choose-language {
+    background: url('../img/DSC00266-min.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+/*.hero-choose-language::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background: rgba(0,0,0,0.6);*/
+/*}*/
+
+.hero-choose-language .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+.hero-choose-language .content h1 {
+    font-size: 55px;
+    color:white;
+}
+
+.hero {
+    background: url('../img/DSC00406-min.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero-about {
+    background: url('../img/scanned/01 (58)-min.jpg') no-repeat center center/cover;
+    height: 75vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero-work {
+    background: url('../img/scanned/01 (45)-min.jpg') no-repeat center center/cover;
+    height: 75vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero-books {
+    background: url('../img/IMG-20181218-WA0001-min.jpeg') no-repeat center center/cover;
+    height: 75vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero-awards {
+    background: url('../img/Aaru-Ramanathan-min.JPG') no-repeat center center/cover;
+    height: 75vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.hero .content h1 {
+    font-size: 55px;
+}
+
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+.hero * {
+    z-index: 10;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #c45605;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.flex-items > div {
+    padding: 20px;
+}
+
+/* Flex columns */
+.flex-columns.flex-reverse .row {
+    flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+.flex-columns h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.flex-columns h4 {
+    margin-bottom: 10px;
+}
+
+.flex-columns p {
+    margin: 20px 0;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-primary, .bg-primary {
+    background: #c45605;
+    color: #fff;
+}
+
+.bg-secondary {
+    background: #ff8101;
+    color:#fff;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+/* Contact page */
+.hero-contact {
+    background: url('../img/DSC00899-min.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero-contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-contact .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.hero-contact .content h1 {
+    font-size: 55px;
+}
+
+.hero-contact .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+.hero-contact * {
+    z-index: 10;
+}
+
+/*table, th, td {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+/*table {*/
+/*    border-collapse: collapse;*/
+/*}*/
+.boxesdata {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.boxesdata td, .boxesdata th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.boxesdata tr:nth-child(even){background-color: #f2f2f2;}
+
+.boxesdata tr:hover {background-color: #ddd;}
+
+.boxesdata th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+html {
+    scroll-behavior: smooth;
+}
