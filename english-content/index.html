@@ -1,132 +1,220 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Welcome to the best indian folklorist Dr.Aru.Ramanathan's page">
-    <meta name="keywords" content="aru ramanathan, best indian folklorist, best tamil folklorist, tamil folklore, tamilnadu folklore, folklorist in tamilnadu, best folklore book">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Aru Ramanathan | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ramanathan Arumugam | The Folklorist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --text: #333;
+            --bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .logo {
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        header {
+            background: var(--white);
+            padding: 60px 5%;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Main Content Grid */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .read-more:after {
+            content: ' →';
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--primary);
+            color: #bdc3c7;
+            margin-top: 60px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="hero">
-        <div class="navbar top">
-            <div class="primary-color"><h1>RA</h1></div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="books.html">Books</a></li>
-                    <li><a href="awards.html">Awards</a></li>
-                    <li><a href="#">Family</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="../index.html">Language</a></li>
-                </ul>
-            </nav>
+
+    <nav>
+        <a href="index.html" class="logo">RA</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="books.html">Books</a>
+            <a href="awards.html">Awards</a>
+            <a href="family.html">Family</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+            <a href="../index.html">Language</a>
         </div>
-        <div class="content">
-            <h1>Dr.<span class="primary-color">R</span>amanathan <span class="primary-color">A</span>rumugam</h1>
-            <p>The Folklorist</p>
-            <a href="#books-released" class="btn"><i class="fas fa-chevron-right"></i> Read More</a>
+    </nav>
+
+    <header>
+        <h1>Dr. Ramanathan Arumugam</h1>
+        <p>The Folklorist</p>
+        <div style="margin-top:20px;">
+            <a href="about.html" class="read-more">Read More</a>
         </div>
     </header>
-    <section class="solutions flex-columns">
-        <div class="row">
-            <div class="column">
-                <div class="column-1">
-                    <img src="../img/DSC_0089-min.jpeg" alt="" />
-                </div>
-            </div>
-            <div class="column" id="books-released">
-                <div class="column-2 bg-primary">
-                    <h4>Books Released</h4>
-                    <p>
-                        The books he published are 45. Except two short story books and one barathiyar
-                        prose all the other books are related to folklore. Fieldwork carried out throughout tamilnadu
-                        and his books and research is around folk songs, folk arts, folk tales, riddles and rituals
-                    </p>
-                    <a href="books.html" class="btn btn-outline">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="solutions flex-columns">
-        <div class="row">
-            <div class="column">
-                <div class="column-2 bg-secondary">
-                    <h4>Work</h4>
-                    <p>
-                        Worked as senior research fellow in Madras university for 2 years (1980-82) then joined
-                        at the Tamil university (20.10.1982) as folklore professor and enacted various roles
-                        such as, head of folklore department,
-                        director of publications, director of distance education and dean and retired in 30.06.2011
-                        Then UGC selected him as Emeritus professor and he worked as Emeritus professor at the
-                        Pondicherry university and Tamil university.
-                    </p>
-                    <a href="work.html" class="btn btn-outline">
-                        Read More.
-                    </a>
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-1">
-                    <img src="../img/DSC_0087-min.jpeg" alt="" />
-                </div>
-            </div>
-        </div>
-    </section>
+    <main class="container">
+        <section class="card">
+            <h2>Books Released</h2>
+            <p>The books he published are 45. Except two short story books and one barathiyar prose all the other books are related to folklore. Fieldwork carried out throughout tamilnadu and his books and research is around folk songs, folk arts, folk tales, riddles and rituals.</p>
+            <a href="books.html" class="read-more">Read More</a>
+        </section>
 
-    <section class="solutions flex-columns">
-        <div class="row">
-            <div class="column">
-                <div class="column-1">
-                    <img src="../img/scanned/01%20(28)-min.jpg" alt="" />
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-2 bg-primary">
-                    <h4>Awards</h4>
-                    <p>
-                        He won eleven awards for his books. Including best book awards given by department of
-                        tamil development, Government of Tamilnadu.
-                    </p>
-                    <a href="awards.html" class="btn btn-outline">
-                        Read More
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="card">
+            <h2>Work</h2>
+            <p>Worked as senior research fellow in Madras university for 2 years (1980-82) then joined at the Tamil university (20.10.1982) as folklore professor and enacted various roles such as, head of folklore department, director of publications, director of distance education and dean and retired in 30.06.2011 Then UGC selected him as Emeritus professor and he worked as Emeritus professor at the Pondicherry university and Tamil university.</p>
+            <a href="work.html" class="read-more">Read More</a>
+        </section>
 
-    <section class="solutions flex-columns">
-        <div class="row">
-            <div class="column">
-                <div class="column-2 bg-secondary">
-                    <h4>Family</h4>
-                    <p>
-                        Married with Pavalakkodi, he has a son
-                        named Arunan and a daughter named Ezhilarasi.
-                    </p>
-                    <a href="#" class="btn btn-outline">
-                        Read More
-                    </a>
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-1">
-                    <img src="../img/DSC01042-min.jpeg" alt="" />
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="card">
+            <h2>Awards</h2>
+            <p>He won eleven awards for his books. Including best book awards given by department of tamil development, Government of Tamilnadu.</p>
+            <a href="awards.html" class="read-more">Read More</a>
+        </section>
+
+        <section class="card">
+            <h2>Family</h2>
+            <p>Married with Pavalakkodi, he has a son named Arunan and a daughter named Ezhilarasi.</p>
+            <a href="family.html" class="read-more">Read More</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dr. Ramanathan Arumugam. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

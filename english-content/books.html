@@ -1,393 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Welcome to the best indian folklorist Dr.Aru.Ramanathan's page">
-    <meta name="keywords" content="aru ramanathan, best indian folklorist, best tamil folklorist, tamil folklore, tamilnadu folklore, folklorist in tamilnadu, best folklore book">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Aru Ramanathan | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Published Books | Dr. Ramanathan Arumugam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --bg: #fdfdfd;
+            --text: #333;
+            --white: #ffffff;
+            --border: #e1e8ed;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Responsive Navigation */
+        nav {
+            background: var(--primary);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            color: var(--white);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--white);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-left: 6px solid var(--accent);
+            padding-left: 20px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 60px;
+            margin-bottom: 25px;
+            color: var(--primary);
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        /* Table Styling */
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+
+        th, td {
+            padding: 18px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: #f8fafc;
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #fdf6f0;
+        }
+
+        .year-col { width: 15%; font-weight: 600; color: var(--accent); }
+        .title-col { width: 50%; font-weight: 600; }
+        .publisher-col { width: 35%; color: #666; font-size: 0.9rem; }
+
+        /* Textbook Section Specifics */
+        .textbook-table .title-col { width: 60%; }
+        .textbook-table .publisher-col { width: 40%; }
+
+        footer {
+            background: var(--primary);
+            color: #bdc3c7;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .nav-links {
+                margin-top: 15px;
+                justify-content: center;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            table {
+                min-width: 600px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="hero-books">
-        <div class="navbar top">
-            <div class="primary-color"><h1>RA</h1></div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="books.html">Books</a></li>
-                    <li><a href="awards.html">Awards</a></li>
-                    <li><a href="#">Family</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="../index.html">Language</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section class="solutions flex-columns">
-        <div class="row">
-            <div class="column">
-                <div class="column-1">
-                    <img src="../img/scanned/01%20(10)-min.jpg" alt="" />
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-2">
-                    <h4>Published books</h4>
-                    <table class="boxesdata">
-                        <tr>
-                            <th> Year </th>
-                            <th> Name of the book </th>
-                            <th> Publisher </th>
-                        </tr>
-                        <tr>
-                            <td>Jan 1976</td>
-                            <td>Kumural (Collection of Short stories)</td>
-                            <td>Samudhaya Sirpikal Veliyeetaham, Manjakkollai – 608 601.</td>
-                        </tr>
-                        <tr>
-                            <td>Nov. 1978</td>
-                            <td>Tamilil Putirkal – Or Ayvu (Research on Tamil riddles)</td>
-                            <td>Samudhaya Sirpikal Veliyeetaham, Manjakkollai – 608 601.</td>
-                        </tr>
-                        <tr>
-                            <td>March 1979</td>
-                            <td>Nattuppuraviyal Ayvukal (Research papers on Tamil Folklore)</td>
-                            <td>Aniyakam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>April 1982</td>
-                            <td>Nattupurap Patalkal Kattum Tamilar Valviyal (The life of the Tamils as revealed in Folk songs)</td>
-                            <td>Manivasakar Pathippakam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>May 1982</td>
-                            <td>Katalar Vitukataikal (Editor) (Classification of Tamil Story riddles)</td>
-                            <td>Samuthaya Sirpikal Veliyeettagam, Manjakkollai – 608 601.</td>
-                        </tr>
-                        <tr>
-                            <td>June 1982</td>
-                            <td>Nattuppurappatal Vakaikal (Classification of Folk Songs
-                                A Booklet)</td>
-                            <td>Pulamai Veliyeetu, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>June 1986</td>
-                            <td>Nattuppurak Kataikal (Editor) (Collection of Folk Tales)</td>
-                            <td>Manivasakar Pathippakam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 1987</td>
-                            <td>Nattuppuraviyal Ayvukal (Collection papers on Tamil Folklore – Enlarged Edition)</td>
-                            <td>Manivasakar Pathippakam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec.1987</td>
-                            <td>Nattupuraviyal Ayvukkovai
-                                (2 V olumes) (Co-Editor) (Collected papers on Folklore)</td>
-                            <td>Tamil Folklore Association of India, Annamalai Nagar.</td>
-                        </tr>
-                        <tr>
-                            <td>March 1988</td>
-                            <td>Varalarru Nilavial Ayvu Murai – Arimukamum Ayvukalum (Historical Geographical Research Method – An Introduction and Researches)</td>
-                            <td>Tamil University, Thanjavur.</td>
-                        </tr>
-                        <tr>
-                            <td>Nov. 1990</td>
-                            <td>Nattuppuravial Ayvu Muraikal (Editor)
-                                (Folklore Research Methods)</td>
-                            <td>Tamil University, Thanjavur.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 1990</td>
-                            <td>Nattuppuravial Ayvukal – Part II (Papers on Folklore)</td>
-                            <td>Manivasakar Noolagam, Chidambaram.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 1994</td>
-                            <td>Vakai – Papers on Tamilology (Co – Editor)</td>
-                            <td>Tamil University Teachers Association, Thanjavur.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 1997</td>
-                            <td>Nattuppuravial Ayvukal (Revised Edition)</td>
-                            <td>Manivasakar Noolagam, Chidambaram.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2001</td>
-                            <td>Nattuppurak Kalaikal – Nikalttukkalaikal
-                                (Folk Performing Arts of Tamilnadu)</td>
-                            <td>Meyyappan Tamilaayvakam, Chidambaram.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2001</td>
-                            <td>Nattuppurappatal Kalanciam (Collection of Folk Songs) (Vol. 1 to 3) (Editor and Chief Editor)</td>
-                            <td>Meyyappan Tamilaayvakam, Chidambaram.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2001</td>
-                            <td>Nattuppurappatal Kalanciam (Collection of Folk Songs) (Vol. 4 to 7) (Chief Editor)</td>
-                            <td>Meyyappan Tamilaayvakam, Chidambaram.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2001</td>
-                            <td>Valum Marapukal (Co-editor) (Living Tradition – Collected papers on Folklore)</td>
-                            <td>Thannane Pathippakam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2001</td>
-                            <td>Tamilil Putirkal (Revised Edition)</td>
-                            <td>Ananya Pathippakam, Thanjavur.</td>
-                        </tr>
-                        <tr>
-                            <td>Oct. 2002</td>
-                            <td>Marivarum Camukam
-                                (Co – Editor) (Folklore Research papers)</td>
-                            <td>Thannane Pathippakam, Chennai.</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="solutions flex-columns">
-        <div class="row">
-            <div class="column">
-                <div class="column-2">
-                    <h4>Published books</h4>
-                    <table class="boxesdata">
-                        <tr>
-                            <th> Year </th>
-                            <th> Name of the book </th>
-                            <th> Publisher </th>
-                        </tr>
-                        <tr>
-                            <td>Oct. 2002</td>
-                            <td>Nattuppura Patal Kalanciam (Collection of Folk Songs) (Vol. 8, 9) (Editor and Chief Editor)</td>
-                            <td>Meyyappan Tamilaayvakam, Chidambaram.</td>
-                        </tr>
-                        <tr>
-                            <td>Oct. 2002</td>
-                            <td>Nattuppura Patal Kalanciam (Collection of Folk Songs) (Vol. 10) (Chief Editor)</td>
-                            <td>Meyyappan Tamilaayvakam, Chidambaram.</td>
-                        </tr>
-                        <tr>
-                            <td>Aug. 2003</td>
-                            <td>Nattuppuravial Kotpattup Parvaikal (Editor) (Theoretical Perspectives in Folklore Studies)</td>
-                            <td>Folklore Society of South Indian Languages (FOSSILS), Thiruvananthapuram, Kerala.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2003</td>
-                            <td>Nattupuravial Kala Ayvu Nerimuraikal (Editor)
-                                (Field Work Methodology in Folklore)</td>
-                            <td>FOSSILS</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2003</td>
-                            <td>Thanjai Nattuppuravial (Co-editor)
-                                (Folklore of Thanjavur)</td>
-                            <td>Thannane Pathippakam, Chennai</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2004</td>
-                            <td>Tamilar Atayalankal (Co-editor) (Papers on Folklore)</td>
-                            <td>Thannane Pathippakam, Chennai</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2004</td>
-                            <td>Katalar Vitukataikal (Editor) Second Edition</td>
-                            <td>Manivasakar Pathippakam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2004</td>
-                            <td>Nattupurak Kataik Kalanciam (V ol. 1) (Editor & Chief Editor) (Collection of Folk Tales)</td>
-                            <td>Manivasakar Pathippakam, Chennai.</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-1">
-                    <img src="../img/scanned/01%20(11)-min.jpg" alt="" />
-                </div>
-            </div>
+    <nav>
+        <a href="index.html" class="logo">RA</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="books.html" style="color: #fff; border-bottom: 1px solid #fff;">Books</a>
+            <a href="awards.html">Awards</a>
+            <a href="#">Family</a>
+            <a href="#">Testimonials</a>
+            <a href="contact.html">Contact</a>
+            <a href="../index.html">Language</a>
         </div>
-    </section>
-    <section class="solutions flex-columns">
-        <div class="row">
-            <div class="column">
-                <div class="column-1">
-                    <img src="../img/scanned/01%20(12)-min.jpg" alt="" />
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-2">
-                    <h4>Published books</h4>
-                    <table class="boxesdata">
-                        <tr>
-                            <th> Year </th>
-                            <th> Name of the book </th>
-                            <th> Publisher </th>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2004</td>
-                            <td>Nattupurak Kataik Kalanciam (V ol. 2 to 11) (Chief Editor) (Collection of Folk Tales)</td>
-                            <td>Manivasakar Pathippakam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2005</td>
-                            <td>Nattupurak Kataik Kalanciam (V ol. 12 to 15) (Chief Editor) (Collection of Folk Tales)</td>
-                            <td>Manivasakar Pathippakam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>2005</td>
-                            <td>Folk Tales of South India – Tamilnadu (Editor)</td>
-                            <td>FOSSILS, Thiruvananthapuram.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec.2006</td>
-                            <td>Tamilar Valipattu Marapukal (Research on Folk Deities of Tamils)</td>
-                            <td>Meyyappan Tamilayvakam, Chidambaram.</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2007 (2nd Edition Dec. 2018)</td>
-                            <td>Tamilar Kalai Ilakkia Marapukal (Arts and Literary Tradition of Tamils – Research on Tamil Folklore)</td>
-                            <td>Meyyappan Tamilayvakam, Chidambaram</td>
-                        </tr>
-                        <tr>
-                            <td>Dec.2007</td>
-                            <td>Ciruvar Cirumiar Valakkarukal, (Co-Editor) (Papers on Children’ s Folklore)</td>
-                            <td>Kaavya Publication, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>April 2011</td>
-                            <td>Tamilil Putirkalum Katalar Vitukataikalum
-                                (Revised and combined Edition)</td>
-                            <td>Manivasagar Pathippakam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>April 2011</td>
-                            <td>Innoru Kolacami
-                                (Collection of Short Stories)</td>
-                            <td>Kavya Publication, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>Feb. 2012</td>
-                            <td>Cittukkuruvikala Voymolippatalkal (Co-editor) (Collection of Folk Songs)</td>
-                            <td>Manivasagar Pathippagam, Chennai.</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="solutions flex-columns">
-        <div class="row">
-            <div class="column">
-                <div class="column-2">
-                    <h4>Published books</h4>
-                    <table class="boxesdata">
-                        <tr>
-                            <th> Year </th>
-                            <th> Name of the book </th>
-                            <th> Publisher </th>
-                        </tr>
-                        <tr>
-                            <td>Nov. 2012</td>
-                            <td>Bharathiarin Urainadaikal (Prose works of Bharathiar)</td>
-                            <td>Meyyappan Pathippagam, Chidambaram</td>
-                        </tr>
-                        <tr>
-                            <td>2014</td>
-                            <td>Deivangalin Thorrakkathaikal (Origin Tales of Deities) (Co-author)</td>
-                            <td>Meyyappan Pathippagam, Chidambaram</td>
-                        </tr>
-                        <tr>
-                            <td>Oct. 2018</td>
-                            <td>Aarirai Kavarthal, Meetal, Eru thaluvuthal = Mattuppongal
-                                (A Research on Maattuppongal Festival)</td>
-                            <td>Meyyappan Pathippagam, Chidambaram</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2018</td>
-                            <td>Ezhuthilakkiyangalum Vaaimozhi Ilakkiyangalum (Written literature and folk literature)</td>
-                            <td>Meyyappan Pathippagam, Chidambaram</td>
-                        </tr>
-                        <tr>
-                            <td>Dec. 2018</td>
-                            <td>Vaaymozhi Marabum Ezhuthu Marabum (Oral tradition and written tradition)</td>
-                            <td>Manivasagar Pathippagam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>2019</td>
-                            <td>Kaarthigai thiruvizha - thol tamilzhar vizha (Karthigai festival - ancient tamil festival)</td>
-                            <td>Meyyapan padhipagam, Chidambaram</td>
-                        </tr>
-                        <tr>
-                            <td>2020</td>
-                            <td>Raamanum theeyil irangiirundhaal (Naatupura illakiya sindhanaigal)</td>
-                            <td>Manivasagar Pathippagam, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>2020</td>
-                            <td>Thesingu rajan kadhai paadalgal (Ballads on Desingu rajan)</td>
-                            <td>Meyyapan padhipagam, Chidambaram</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-1">
-                    <img src="../img/scanned/01%20(15)-min.jpg" alt="" />
-                </div>
-            </div>
-        </div>
-    </section>
+    </nav>
 
-    <section class="solutions flex-columns">
-        <div class="row">
-            <div class="column">
-                <div class="column-1">
-                    <img src="../img/scanned/01%20(16)-min.jpg" alt="" />
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-2">
-                    <h4>Text book lessons he wrote for the following universities</h4>
-                    <table class="boxesdata">
-                        <tr>
-                            <th> Title of the book </th>
-                            <th> University </th>
-                        </tr>
-                        <tr>
-                            <td>Folk Literature (six lessons for higher education)</td>
-                            <td>Tamil Virtual University, Chennai.
-                                (Sept. 2002)</td>
-                        </tr>
-                        <tr>
-                            <td>Folklore (M.A. Tamil, Paper X)</td>
-                            <td>Directorate of Research and Virtual Education, SRM University of Science and Technology, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>Folklore – An Introduction (Diploma in Folklore)</td>
-                            <td>Tamilnadu Open University, Chennai.</td>
-                        </tr>
-                        <tr>
-                            <td>Folk Literature – Study Guide for Degree Course</td>
-                            <td>Singapore University of Social Sciences</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+    <div class="container">
+        <header>
+            <h1>Published Books</h1>
+            <p>A comprehensive bibliography of folklore research and literary works.</p>
+        </header>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="year-col">Year</th>
+                        <th class="title-col">Name of the book</th>
+                        <th class="publisher-col">Publisher</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="year-col">Jan 1976</td><td class="title-col">Kumural (Collection of Short stories)</td><td class="publisher-col">Samudhaya Sirpikal Veliyeetaham, Manjakkollai – 608 601.</td></tr>
+                    <tr><td class="year-col">Nov. 1978</td><td class="title-col">Tamilil Putirkal – Or Ayvu (Research on Tamil riddles)</td><td class="publisher-col">Samudhaya Sirpikal Veliyeetaham, Manjakkollai – 608 601.</td></tr>
+                    <tr><td class="year-col">March 1979</td><td class="title-col">Nattuppuraviyal Ayvukal (Research papers on Tamil Folklore)</td><td class="publisher-col">Aniyakam, Chennai.</td></tr>
+                    <tr><td class="year-col">April 1982</td><td class="title-col">Nattupurap Patalkal Kattum Tamilar Valviyal (The life of the Tamils as revealed in Folk songs)</td><td class="publisher-col">Manivasakar Pathippakam, Chennai.</td></tr>
+                    <tr><td class="year-col">May 1982</td><td class="title-col">Katalar Vitukataikal (Editor) (Classification of Tamil Story riddles)</td><td class="publisher-col">Samuthaya Sirpikal Veliyeettagam, Manjakkollai – 608 601.</td></tr>
+                    <tr><td class="year-col">June 1982</td><td class="title-col">Nattuppurappatal Vakaikal (Classification of Folk Songs A Booklet)</td><td class="publisher-col">Pulamai Veliyeetu, Chennai.</td></tr>
+                    <tr><td class="year-col">June 1986</td><td class="title-col">Nattuppurak Kataikal (Editor) (Collection of Folk Tales)</td><td class="publisher-col">Manivasakar Pathippakam, Chennai.</td></tr>
+                    <tr><td class="year-col">Dec. 1987</td><td class="title-col">Nattuppuraviyal Ayvukal (Collection papers on Tamil Folklore – Enlarged Edition)</td><td class="publisher-col">Manivasakar Pathippakam, Chennai.</td></tr>
+                    <tr><td class="year-col">Dec. 1987</td><td class="title-col">Nattupuraviyal Ayvukkovai (2 Volumes) (Co-Editor)</td><td class="publisher-col">Tamil Folklore Association of India, Annamalai Nagar.</td></tr>
+                    <tr><td class="year-col">March 1988</td><td class="title-col">Varalarru Nilavial Ayvu Murai – Arimukamum Ayvukalum</td><td class="publisher-col">Tamil University, Thanjavur.</td></tr>
+                    <tr><td class="year-col">Nov. 1990</td><td class="title-col">Nattuppuravial Ayvu Muraikal (Editor) (Folklore Research Methods)</td><td class="publisher-col">Tamil University, Thanjavur.</td></tr>
+                    <tr><td class="year-col">Dec. 1990</td><td class="title-col">Nattuppuravial Ayvukal – Part II (Papers on Folklore)</td><td class="publisher-col">Manivasakar Noolagam, Chidambaram.</td></tr>
+                    <tr><td class="year-col">Dec. 1994</td><td class="title-col">Vakai – Papers on Tamilology (Co – Editor)</td><td class="publisher-col">Tamil University Teachers Association, Thanjavur.</td></tr>
+                    <tr><td class="year-col">Dec. 1997</td><td class="title-col">Nattuppuravial Ayvukal (Revised Edition)</td><td class="publisher-col">Manivasakar Noolagam, Chidambaram.</td></tr>
+                    <tr><td class="year-col">Dec. 2001</td><td class="title-col">Nattuppurak Kalaikal – Nikalttukkalaikal (Folk Performing Arts of Tamilnadu)</td><td class="publisher-col">Meyyappan Tamilaayvakam, Chidambaram.</td></tr>
+                    <tr><td class="year-col">Dec. 2001</td><td class="title-col">Nattuppurappatal Kalanciam (Vol. 1 to 3) (Editor and Chief Editor)</td><td class="publisher-col">Meyyappan Tamilaayvakam, Chidambaram.</td></tr>
+                    <tr><td class="year-col">Dec. 2001</td><td class="title-col">Nattuppurappatal Kalanciam (Vol. 4 to 7) (Chief Editor)</td><td class="publisher-col">Meyyappan Tamilaayvakam, Chidambaram.</td></tr>
+                    <tr><td class="year-col">Dec. 2001</td><td class="title-col">Valum Marapukal (Co-editor)</td><td class="publisher-col">Thannane Pathippakam, Chennai.</td></tr>
+                    <tr><td class="year-col">Dec. 2001</td><td class="title-col">Tamilil Putirkal (Revised Edition)</td><td class="publisher-col">Ananya Pathippakam, Thanjavur.</td></tr>
+                    <tr><td class="year-col">Oct. 2002</td><td class="title-col">Marivarum Camukam (Co – Editor)</td><td class="publisher-col">Thannane Pathippakam, Chennai.</td></tr>
+                    <tr><td class="year-col">Oct. 2002</td><td class="title-col">Nattuppura Patal Kalanciam (Vol. 8, 9) (Editor and Chief Editor)</td><td class="publisher-col">Meyyappan Tamilaayvakam, Chidambaram.</td></tr>
+                    <tr><td class="year-col">Oct. 2002</td><td class="title-col">Nattuppura Patal Kalanciam (Vol. 10) (Chief Editor)</td><td class="publisher-col">Meyyappan Tamilaayvakam, Chidambaram.</td></tr>
+                    <tr><td class="year-col">Aug. 2003</td><td class="title-col">Nattuppuravial Kotpattup Parvaikal (Editor)</td><td class="publisher-col">FOSSILS, Thiruvananthapuram, Kerala.</td></tr>
+                    <tr><td class="year-col">Dec. 2003</td><td class="title-col">Nattupuravial Kala Ayvu Nerimuraikal (Editor)</td><td class="publisher-col">FOSSILS</td></tr>
+                    <tr><td class="year-col">Dec. 2003</td><td class="title-col">Thanjai Nattuppuravial (Co-editor)</td><td class="publisher-col">Thannane Pathippakam, Chennai</td></tr>
+                    <tr><td class="year-col">Dec. 2004</td><td class="title-col">Tamilar Atayalankal (Co-editor)</td><td class="publisher-col">Thannane Pathippakam, Chennai</td></tr>
+                    <tr><td class="year-col">Dec. 2004</td><td class="title-col">Katalar Vitukataikal (Editor) Second Edition</td><td class="publisher-col">Manivasakar Pathippakam, Chennai.</td></tr>
+                    <tr><td class="year-col">Dec. 2004</td><td class="title-col">Nattupurak Kataik Kalanciam (Vol. 1) (Editor & Chief Editor)</td><td class="publisher-col">Manivasakar Pathippakam, Chennai.</td></tr>
+                    <tr><td class="year-col">Dec. 2004</td><td class="title-col">Nattupurak Kataik Kalanciam (Vol. 2 to 11) (Chief Editor)</td><td class="publisher-col">Manivasakar Pathippakam, Chennai.</td></tr>
+                    <tr><td class="year-col">Dec. 2005</td><td class="title-col">Nattupurak Kataik Kalanciam (Vol. 12 to 15) (Chief Editor)</td><td class="publisher-col">Manivasakar Pathippakam, Chennai.</td></tr>
+                    <tr><td class="year-col">2005</td><td class="title-col">Folk Tales of South India – Tamilnadu (Editor)</td><td class="publisher-col">FOSSILS, Thiruvananthapuram.</td></tr>
+                    <tr><td class="year-col">Dec. 2006</td><td class="title-col">Tamilar Valipattu Marapukal (Research on Folk Deities)</td><td class="publisher-col">Meyyappan Tamilayvakam, Chidambaram.</td></tr>
+                    <tr><td class="year-col">Dec. 2007</td><td class="title-col">Tamilar Kalai Ilakkia Marapukal (Arts and Literary Tradition)</td><td class="publisher-col">Meyyappan Tamilayvakam, Chidambaram</td></tr>
+                    <tr><td class="year-col">Dec. 2007</td><td class="title-col">Ciruvar Cirumiar Valakkarukal, (Co-Editor)</td><td class="publisher-col">Kaavya Publication, Chennai.</td></tr>
+                    <tr><td class="year-col">April 2011</td><td class="title-col">Tamilil Putirkalum Katalar Vitukataikalum</td><td class="publisher-col">Manivasagar Pathippakam, Chennai.</td></tr>
+                    <tr><td class="year-col">April 2011</td><td class="title-col">Innoru Kolacami (Collection of Short Stories)</td><td class="publisher-col">Kavya Publication, Chennai.</td></tr>
+                    <tr><td class="year-col">Feb. 2012</td><td class="title-col">Cittukkuruvikala Voymolippatalkal (Co-editor)</td><td class="publisher-col">Manivasagar Pathippagam, Chennai.</td></tr>
+                    <tr><td class="year-col">Nov. 2012</td><td class="title-col">Bharathiarin Urainadaikal (Prose works of Bharathiar)</td><td class="publisher-col">Meyyappan Pathippagam, Chidambaram</td></tr>
+                    <tr><td class="year-col">2014</td><td class="title-col">Deivangalin Thorrakkathaikal (Origin Tales of Deities)</td><td class="publisher-col">Meyyappan Pathippagam, Chidambaram</td></tr>
+                    <tr><td class="year-col">Oct. 2018</td><td class="title-col">Aarirai Kavarthal, Meetal, Eru thaluvuthal = Mattuppongal</td><td class="publisher-col">Meyyappan Pathippagam, Chidambaram</td></tr>
+                    <tr><td class="year-col">Dec. 2018</td><td class="title-col">Ezhuthilakkiyangalum Vaaimozhi Ilakkiyangalum</td><td class="publisher-col">Meyyappan Pathippagam, Chidambaram</td></tr>
+                    <tr><td class="year-col">Dec. 2018</td><td class="title-col">Vaaymozhi Marabum Ezhuthu Marabum</td><td class="publisher-col">Manivasagar Pathippagam, Chennai.</td></tr>
+                    <tr><td class="year-col">2019</td><td class="title-col">Kaarthigai thiruvizha - thol tamilzhar vizha</td><td class="publisher-col">Meyyapan padhipagam, Chidambaram</td></tr>
+                    <tr><td class="year-col">2020</td><td class="title-col">Raamanum theeyil irangiirundhaal (Naatupura illakiya sindhanaigal)</td><td class="publisher-col">Manivasagar Pathippagam, Chennai.</td></tr>
+                    <tr><td class="year-col">2020</td><td class="title-col">Thesingu rajan kadhai paadalgal (Ballads on Desingu rajan)</td><td class="publisher-col">Meyyapan padhipagam, Chidambaram</td></tr>
+                </tbody>
+            </table>
         </div>
-    </section>
+
+        <h2>Text book lessons</h2>
+        <div class="table-container">
+            <table class="textbook-table">
+                <thead>
+                    <tr>
+                        <th class="title-col">Title of the book</th>
+                        <th class="publisher-col">University</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="title-col">Folk Literature (six lessons for higher education)</td><td class="publisher-col">Tamil Virtual University, Chennai. (Sept. 2002)</td></tr>
+                    <tr><td class="title-col">Folklore (M.A. Tamil, Paper X)</td><td class="publisher-col">SRM University of Science and Technology, Chennai.</td></tr>
+                    <tr><td class="title-col">Folklore – An Introduction (Diploma in Folklore)</td><td class="publisher-col">Tamilnadu Open University, Chennai.</td></tr>
+                    <tr><td class="title-col">Folk Literature – Study Guide for Degree Course</td><td class="publisher-col">Singapore University of Social Sciences</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dr. Ramanathan Arumugam. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
